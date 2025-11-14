@@ -54,10 +54,10 @@ const Hero = () => {
             <Button
               variant="glow"
               size="lg"
-              onClick={() => window.open("https://github.com/ahmedsaif", "_blank")}
+              onClick={() => window.open("https://www.linkedin.com/in/alice-saif-a111b2357/", "_blank")}
             >
               <Github className="mr-2 h-5 w-5" />
-              GitHub Profile
+              LinkedIn
             </Button>
           </div>
 

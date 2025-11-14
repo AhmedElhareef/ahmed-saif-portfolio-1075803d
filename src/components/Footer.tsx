@@ -1,4 +1,4 @@
-import { Github, Mail } from "lucide-react";
+import { Github, Mail, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -13,16 +13,27 @@ const Footer = () => {
           {/* Social Links */}
           <div className="flex items-center gap-4">
             <a
+              href="https://www.linkedin.com/in/alice-saif-a111b2357/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors"
+              aria-label="LinkedIn Profile"
+            >
+              <Linkedin className="w-5 h-5" />
+            </a>
+            <a
               href="https://github.com/ahmedsaif"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
+              aria-label="GitHub Profile"
             >
               <Github className="w-5 h-5" />
             </a>
             <a
               href="mailto:msaif0652@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors"
+              aria-label="Email"
             >
               <Mail className="w-5 h-5" />
             </a>

@@ -1,45 +1,42 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Github, ExternalLink } from "lucide-react";
+import salesProfitDashboard from "@/assets/dashboard-sales-profit.jpg";
+import salesQuantityDashboard from "@/assets/dashboard-sales-quantity.jpg";
+import salesStateDashboard from "@/assets/dashboard-sales-state.jpg";
+import startupExpansionDashboard from "@/assets/dashboard-startup-expansion.jpg";
 
 const Projects = () => {
   const featuredProjects = [
     {
-      title: "Sales Analytics Dashboard",
-      description: "Interactive Power BI dashboard analyzing sales trends, customer behavior, and revenue forecasting with real-time data visualization.",
-      image: "/placeholder.svg",
-      github: "https://github.com/ahmedsaif/sales-dashboard",
+      title: "Sales & Profit Analytics Dashboard",
+      description: "Comprehensive Power BI dashboard analyzing $20M in total sales across multiple states, tracking profit trends, profitability rates (49.9%), and sales performance by stock items with interactive filters.",
+      image: salesProfitDashboard,
+      github: "https://github.com/ahmedsaif/sales-profit-dashboard",
       category: "featured",
     },
     {
-      title: "Customer Churn Prediction",
-      description: "Machine learning model built with Python to predict customer churn using historical data and behavioral patterns.",
-      image: "/placeholder.svg",
-      github: "https://github.com/ahmedsaif/churn-prediction",
+      title: "Sales Quantity Analysis Dashboard",
+      description: "Interactive dashboard visualizing 1M+ quantity sold across 14K chiller items and 1M dry items. Tracks total sales trends by year and provides detailed stock item breakdowns with filterable dimensions.",
+      image: salesQuantityDashboard,
+      github: "https://github.com/ahmedsaif/sales-quantity-dashboard",
       category: "featured",
     },
     {
-      title: "SQL Database Optimization",
-      description: "Comprehensive project optimizing complex SQL queries and database structures for improved performance and scalability.",
-      image: "/placeholder.svg",
-      github: "https://github.com/ahmedsaif/sql-optimization",
+      title: "State Sales Performance Tracker",
+      description: "Geographic sales analysis showing $19.9M total sales across US states (Alaska, California, Hawaii, Nevada, Oregon, Washington) with performance ratings and detailed state-level metrics.",
+      image: salesStateDashboard,
+      github: "https://github.com/ahmedsaif/state-sales-tracker",
       category: "featured",
     },
   ];
 
   const newProjects = [
     {
-      title: "Social Media Sentiment Analysis",
-      description: "NLP-powered tool analyzing social media posts to gauge public sentiment using Python and machine learning algorithms.",
-      image: "/placeholder.svg",
-      github: "https://github.com/ahmedsaif/sentiment-analysis",
-      category: "new",
-    },
-    {
-      title: "Inventory Management System",
-      description: "Full-stack web application for inventory tracking with real-time analytics and automated reporting features.",
-      image: "/placeholder.svg",
-      github: "https://github.com/ahmedsaif/inventory-system",
+      title: "Startup Expansion Analytics",
+      description: "Strategic dashboard analyzing $5M profit and $6M revenue across two sales regions with geographic mapping, marketing spend analysis ($428K), and expansion tracking by store ID.",
+      image: startupExpansionDashboard,
+      github: "https://github.com/ahmedsaif/startup-expansion",
       category: "new",
     },
   ];
@@ -47,11 +44,16 @@ const Projects = () => {
   const ProjectCard = ({ project }: { project: typeof featuredProjects[0] }) => (
     <Card className="bg-card border-border card-glow group overflow-hidden">
       <div
-        className="relative overflow-hidden cursor-pointer h-48 bg-gradient-to-br from-primary/10 to-secondary/10"
+        className="relative overflow-hidden cursor-pointer h-48 bg-muted"
         onClick={() => window.open(project.github, "_blank")}
       >
-        <div className="absolute inset-0 flex items-center justify-center">
-          <ExternalLink className="w-12 h-12 text-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        <img 
+          src={project.image} 
+          alt={project.title}
+          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+        />
+        <div className="absolute inset-0 bg-background/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+          <ExternalLink className="w-12 h-12 text-primary" />
         </div>
       </div>
       <CardHeader>
