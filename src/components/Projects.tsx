@@ -12,21 +12,21 @@ const Projects = () => {
       title: "Sales & Profit Analytics Dashboard",
       description: "Comprehensive Power BI dashboard analyzing $20M in total sales across multiple states, tracking profit trends, profitability rates (49.9%), and sales performance by stock items with interactive filters.",
       image: salesProfitDashboard,
-      github: "https://github.com/ahmedsaif/sales-profit-dashboard",
+      github: "https://github.com/ahmedseif005",
       category: "featured",
     },
     {
       title: "Sales Quantity Analysis Dashboard",
       description: "Interactive dashboard visualizing 1M+ quantity sold across 14K chiller items and 1M dry items. Tracks total sales trends by year and provides detailed stock item breakdowns with filterable dimensions.",
       image: salesQuantityDashboard,
-      github: "https://github.com/ahmedsaif/sales-quantity-dashboard",
+      github: "https://github.com/ahmedseif005",
       category: "featured",
     },
     {
       title: "State Sales Performance Tracker",
       description: "Geographic sales analysis showing $19.9M total sales across US states (Alaska, California, Hawaii, Nevada, Oregon, Washington) with performance ratings and detailed state-level metrics.",
       image: salesStateDashboard,
-      github: "https://github.com/ahmedsaif/state-sales-tracker",
+      github: "https://github.com/ahmedseif005",
       category: "featured",
     },
   ];
@@ -36,7 +36,7 @@ const Projects = () => {
       title: "Startup Expansion Analytics",
       description: "Strategic dashboard analyzing $5M profit and $6M revenue across two sales regions with geographic mapping, marketing spend analysis ($428K), and expansion tracking by store ID.",
       image: startupExpansionDashboard,
-      github: "https://github.com/ahmedsaif/startup-expansion",
+      github: "https://github.com/ahmedseif005",
       category: "new",
     },
   ];
